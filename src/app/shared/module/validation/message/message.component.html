@@ -1,0 +1,16 @@
+<div *ngIf="control.errors && control.touched" class="error-msg" style="padding: 10px 50px;">
+  <div class="text-danger" *ngIf="control.errors.required">Field is required.</div>
+  <div class="text-danger" *ngIf="control.errors.doesMatchPassword">Password does not match.</div>
+  <div class="text-danger" *ngIf="control.errors.min">Positive value is required.</div>
+  <div class="text-danger" *ngIf="control.errors.max">Value exceed.</div>
+  <div class="text-danger" *ngIf="control.errors.numbers_decimal_only">Numbers are required.</div>
+  <span class="text-danger" *ngIf="control.errors.dropdownRequired">Field is required.</span>
+  <div class="text-danger" *ngIf="control.errors.invalid_cnic">Invalid CNIC/B-Form</div>
+  <div class="text-danger" *ngIf="control.errors.numbers_only">Numbers are allowed.</div>
+  <div class="text-danger" *ngIf="control.errors.maxlength ">Valid input is required</div>
+  <div class="text-danger" *ngIf="control.errors.minlength">Valid input is required</div>
+  <div class="text-danger" *ngIf="control.errors.isMax">Invalid Marks</div>
+  <div class="text-danger" *ngIf="control.errors.cnicExist">CNIC already exist</div>
+  <div class="text-danger" *ngIf="control.errors.invalidMinDate">Invalid Date</div>
+  <div class="text-danger" *ngIf="control.errors.email && !control.errors.required">Email is invalid.</div>
+</div>

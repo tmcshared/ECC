@@ -1,0 +1,42 @@
+<app-header title="Login"></app-header>
+
+
+<section id="content" class="section-padding">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-5 col-md-6 col-xs-12">
+
+        <div class="page-login-form box">
+          <h3>
+            Login
+          </h3>
+          <form class="login-form" [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+            <div class="form-group">
+              <div class="input-icon">
+                <i class="lni-user"></i>
+                <input type="text" id="sender-email" formControlName="username" class="form-control" name="email"
+                  placeholder="Username">
+              </div>
+              <app-message [control]="loginForm.get('username')"></app-message>
+            </div>
+            <div class="form-group">
+              <div class="input-icon">
+                <i class="lni-lock"></i>
+                <input type="password" class="form-control" formControlName="password" placeholder="Password">
+
+              </div>
+              <app-message [control]="loginForm.get('password')"></app-message>
+            </div>
+
+            <button class="btn btn-common log-btn" [disabled]="!loginForm.valid" type="submit">Submit</button>
+          </form>
+          <ul class="form-links">
+            <li class="text-center"><a routerLink="/account/register">Don't have an account?</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<app-footer></app-footer>
