@@ -11,15 +11,15 @@ export const BASE = {
          </wsse:UsernameToken>
       </wsse:Security>
       <irc:SOAHeader>
-         <!--Optional:-->
+         
          <irc:Responsibility>SYSTEM_ADMINISTRATOR</irc:Responsibility>
-         <!--Optional:-->
+         
          <irc:RespApplication>SYSADMIN</irc:RespApplication>
-         <!--Optional:-->
+         
          <irc:SecurityGroup>STANDARD</irc:SecurityGroup>
-         <!--Optional:-->
+         
          <irc:NLSLanguage>AMERICAN</irc:NLSLanguage>
-         <!--Optional:-->
+         
          <irc:Org_Id/>
       </irc:SOAHeader>
    </soapenv:Header>

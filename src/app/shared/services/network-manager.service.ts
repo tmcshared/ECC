@@ -13,18 +13,10 @@ export class NetworkManagerService {
     let httpHeaders = new HttpHeaders()
       .set("Content-Type", "application/xml")
       .append("dataType", "xml");
-    return this.http
-      .post(environment.baseUrl + url, body, {
-        headers: httpHeaders,
-        responseType: "text"
-      })
-      .map(res => {
-        let data;
-        xml2js.parseString(res, function(err, result) {
-          data = result["soap:Envelope"]["soap:Body"];
-        });
-        return data[0];
-      });
+    return this.http.post(environment.baseUrl + url, body, {
+      headers: httpHeaders,
+      responseType: "text"
+    });
   }
   getForkJoin(request: any[]): Observable<any> {
     const array = [];
