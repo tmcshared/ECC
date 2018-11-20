@@ -1,44 +1,57 @@
-<app-header title="Create account"></app-header>
+<!-- <app-header title="Create account"></app-header> -->
 <section id="content">
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-lg-9 col-md-12 col-xs-12">
         <div class="add-resume box">
           <div class="post-header">
-            <p>Already have an account? <a routerLink="/account/login">Click here to login</a></p>
+            <p>
+              Already have an account?
+              <a routerLink="/account/login">Click here to login</a>
+            </p>
           </div>
           <h3 class="job-title">Create account</h3>
-          <p>If you have a resume, you can create your profile and attach your resume to your account. If you don't
-            have a resume, then provide your details and we will create your resume online.</p>
-          <br>
-          <input type="radio" name="resume" value="true"> &nbsp;&nbsp; Yes, I have a resume<br><br>
+          <p>
+            If you have a resume, you can create your profile and attach your
+            resume to your account. If you don't have a resume, then provide
+            your details and we will create your resume online.
+          </p>
+          <br />
+          <input type="radio" name="resume" value="true" /> &nbsp;&nbsp; Yes, I
+          have a resume<br /><br />
 
           <div class="form-group">
             <div class="button-group">
               <div class="action-buttons">
                 <div class="upload-button">
                   <button class="btn btn-common">Upload resume</button>
-                  <input id="cover_img_file_1" type="file">
+                  <input id="cover_img_file_1" type="file" />
                 </div>
               </div>
             </div>
           </div>
-          <input type="radio" name="resume" value="false"> &nbsp;&nbsp; No, I do not have a resume<br>
-          <br>
+          <input type="radio" name="resume" value="false" /> &nbsp;&nbsp; No, I
+          do not have a resume<br />
+          <br />
 
           <div class="social-link">
-            <p>Import the cv from Linkdin account.
+            <p>
+              Import the cv from Linkdin account.
               <a href="#" class="linkedin"><i class="lni-linkedin-fill"></i></a>
+            </p>
           </div>
-          <div class="form-group text-right">
-            <a href="#" class="btn btn-border" routerLink="/account/login">Cancel</a>&nbsp;
-            <a href="#" class="btn btn-border" routerLink="/profile/create">Continue</a>
 
+          <div class="form-group text-right">
+            <a href="#" class="btn btn-border" routerLink="/account/login"
+              >Cancel</a
+            >&nbsp;
+            <a href="#" class="btn btn-border" routerLink="/profile/create"
+              >Continue</a
+            >
           </div>
         </div>
-
       </div>
     </div>
   </div>
 </section>
-<app-footer></app-footer>
+<!-- <app-footer></app-footer> -->

@@ -1,549 +1,598 @@
-<app-header title="Create Resume"></app-header>
+<!-- <app-header title="Create Resume"></app-header> -->
 <section id="content">
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-lg-9 col-md-12 col-xs-12">
         <div class="add-resume box">
           <div class="post-header">
-            <p>Already have an account? <a routerLink="/account/login">Click here to login</a></p>
+            <p>
+              Already have an account?
+              <a routerLink="/account/login">Click here to login</a>
+            </p>
           </div>
           <form class="form-ad">
-            <div class="panel-group" id="accordion">
-              <div class="panel panel-default">
-                <div class="panel-heading">
-                  <h4 class="panel-title">
-                    <a data-toggle="collapse" aria-expanded="true" data-parent="#accordion" href="#collapsePersonal">
-                      Personal Information
-                    </a>
-                  </h4>
+            <div class="manager-resumes-item">
+              <div class="manager-content">
+                <h3>Personal Information</h3>
+                <div class="form-group">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <label class="control-label">First Name</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Enter first name"
+                      />
+                    </div>
+                    <div class="col-md-6">
+                      <label class="control-label">Middle Name</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Enter last name"
+                      />
+                    </div>
+                  </div>
                 </div>
-                <div id="collapsePersonal" class="panel-collapse collapse in show">
-                  <div class="panel-body">
-                    <div class="manager-resumes-item">
-                      <div class="manager-content">
-                        <div class="form-group">
-                          <div class="row">
-                            <div class="col-md-6">
-                              <label class="control-label">First Name</label>
-                              <input type="text" class="form-control" placeholder="Enter first name">
-                            </div>
-                            <div class="col-md-6">
-                              <label class="control-label">Middle Name</label>
-                              <input type="text" class="form-control" placeholder="Enter last name">
-                            </div>
-                          </div>
+                <div class="form-group">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <label class="control-label">Family Name</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Enter first name"
+                      />
+                    </div>
+                    <div class="col-md-6">
+                      <label class="control-label">Birth date</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Enter last name"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <label class="control-label">Email</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Enter first name"
+                      />
+                    </div>
+                    <div class="col-md-6">
+                      <label class="control-label">Gender</label>
+                      <div class="search-category-container">
+                        <label class="styled-select">
+                          <select class="dropdown-product selectpicker">
+                            <option>Male</option>
+                            <option>Female</option>
+                          </select>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <label class="control-label">Nationality </label>
+                      <div class="search-category-container">
+                        <label class="styled-select">
+                          <select class="dropdown-product selectpicker">
+                            <option>All Categories</option>
+                            <option>Finance</option>
+                            <option>IT & Engineering</option>
+                            <option>Education/Training</option>
+                            <option>Art/Design</option>
+                            <option>Sale/Markting</option>
+                            <option>Healthcare</option>
+                            <option>Science</option>
+                            <option>Food Services</option>
+                          </select>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <label class="control-label"
+                        >How did you hear about us?</label
+                      >
+                      <div class="search-category-container">
+                        <label class="styled-select">
+                          <select class="dropdown-product selectpicker">
+                            <option>All Categories</option>
+                            <option>Finance</option>
+                            <option>IT & Engineering</option>
+                            <option>Education/Training</option>
+                            <option>Art/Design</option>
+                            <option>Sale/Markting</option>
+                            <option>Healthcare</option>
+                            <option>Science</option>
+                            <option>Food Services</option>
+                          </select>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <div class="col-md-6">
+                    <input type="checkbox" name="vehicle1" value="Bike" />
+                    &nbsp; Are you a AD Ports employee?
+                  </div>
+                </div>
+                <!-- <div class="form-group">
+                  <button class="btn btn-common log-btn" type="button">
+                    Add
+                  </button>
+                  &nbsp;
+                  <button class="btn btn-common  btn-danger" type="button">
+                    Cancel
+                  </button>
+                </div> -->
+              </div>
+            </div>
+
+            <div class="manager-resumes-item">
+              <div class="manager-content">
+                <h3>Education</h3>
+                <div class="form-group">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <label class="control-label">Institution Name</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Institution Name"
+                      />
+                    </div>
+                    <div class="col-md-6">
+                      <label class="control-label">Degree</label>
+                      <div class="search-category-container">
+                        <label class="styled-select">
+                          <select class="dropdown-product selectpicker">
+                            <option>High school or equivalent</option>
+                            <option>Master's degree </option>
+                            <option>Diploma</option>
+                            <option>Doctorate</option>
+                            <option>Bachelor's degree</option>
+                            <option>Higher diploma</option>
+                          </select>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <label class="control-label">Grade</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Grade"
+                      />
+                    </div>
+                    <div class="col-md-6">
+                      <label class="control-label">Completion date</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Completion date"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <label class="control-label">Country</label>
+                      <div class="search-category-container">
+                        <label class="styled-select">
+                          <select class="dropdown-product selectpicker">
+                            <option value="">Select</option>
+                            <option>All Categories</option>
+                            <option>Finance</option>
+                            <option>IT & Engineering</option>
+                            <option>Education/Training</option>
+                            <option>Art/Design</option>
+                            <option>Sale/Markting</option>
+                            <option>Healthcare</option>
+                            <option>Science</option>
+                            <option>Food Services</option>
+                          </select>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <label class="control-label">City</label>
+                      <div class="search-category-container">
+                        <label class="styled-select">
+                          <select class="dropdown-product selectpicker">
+                            <option value="">Select</option>
+                            <option>All Categories</option>
+                            <option>Finance</option>
+                            <option>IT & Engineering</option>
+                            <option>Education/Training</option>
+                            <option>Art/Design</option>
+                            <option>Sale/Markting</option>
+                            <option>Healthcare</option>
+                            <option>Science</option>
+                            <option>Food Services</option>
+                          </select>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <button class="btn btn-common log-btn" type="button">
+                    Add
+                  </button>
+                  &nbsp;
+                  <button class="btn btn-common btn-danger" type="button">
+                    Reset
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="manager-resumes-item">
+              <div class="manager-content">
+                <div class="manager-info">
+                  <div class="manager-name">
+                    <h4><a href="#">Zane Joyner</a></h4>
+                    <h5>Front-end developer</h5>
+                  </div>
+                  <div class="manager-meta">
+                    <span class="location"
+                      ><i class="lni-map-marker"></i> Cupertino, CA, USA</span
+                    >
+                    <span class="rate"
+                      ><i class="lni-alarm-clock"></i> $55 per hour</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="update-date">
+                <p class="status"><strong>Updated on:</strong> Fab 22, 2020</p>
+                <div class="action-btn">
+                  <a class="btn btn-xs btn-gray" href="#">Edit</a>
+                  <a class="btn btn-xs btn-danger" href="#">Delete</a>
+                </div>
+              </div>
+            </div>
+            <div class="manager-resumes-item">
+              <div class="manager-content">
+                <div class="manager-info">
+                  <div class="manager-name">
+                    <h4><a href="#">Zane Joyner</a></h4>
+                    <h5>Front-end developer</h5>
+                  </div>
+                  <div class="manager-meta">
+                    <span class="location"
+                      ><i class="lni-map-marker"></i> Cupertino, CA, USA</span
+                    >
+                    <span class="rate"
+                      ><i class="lni-alarm-clock"></i> $55 per hour</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="update-date">
+                <p class="status"><strong>Updated on:</strong> Fab 22, 2020</p>
+                <div class="action-btn">
+                  <a class="btn btn-xs btn-gray" href="#">Edit</a>
+                  <a class="btn btn-xs btn-danger" href="#">Delete</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="manager-resumes-item">
+              <div class="manager-content">
+                <h3>Experience</h3>
+                <div class="form-group">
+                  <div class="col-md-12">
+                    <input type="checkbox" name="vehicle1" value="Bike" />
+                    &nbsp; Do you have professional work experience?
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <label class="control-label">Start date</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Start date"
+                      />
+                    </div>
+                    <div class="col-md-6">
+                      <label class="control-label">End date</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="End date"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <label class="control-label">Location</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Location"
+                      />
+                    </div>
+                    <div class="col-md-6">
+                      <label class="control-label"
+                        >Nationality of Spouse
+                      </label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Company Name"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <label class="control-label">Company Industry</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Company Industry"
+                      />
+                    </div>
+                    <div class="col-md-6">
+                      <label class="control-label">Job Role </label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Job Role"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <label class="control-label">Position in Company</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Position in Company"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <label class="control-label">Work Description</label>
+                      <textarea
+                        class="form-control"
+                        placeholder="Work Description"
+                        rows="5"
+                      ></textarea>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <button class="btn btn-common log-btn" type="button">
+                    Add
+                  </button>
+                  &nbsp;
+                  <button class="btn btn-common  btn-danger" type="button">
+                    Reset
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="manager-resumes-item">
+              <div class="manager-content">
+                <h3>Language</h3>
+                <div class="form-group">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <label class="control-label">Language</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Language"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <button class="btn btn-common log-btn" type="button">
+                    Add
+                  </button>
+                  &nbsp;
+                  <button class="btn btn-common  btn-danger" type="button">
+                    Reset
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="manager-resumes-item">
+                <div class="manager-content">
+                    <h3>CV Attachement</h3>
+                  <div class="button-group">
+                    <div class="action-buttons">
+                      <div class="upload-button">
+                        <button class="btn btn-common">
+                          Upload resume
+                        </button>
+                        <input id="cover_img_file_1" type="file" />
+                      </div>
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
+              <div class="manager-resumes-item">
+                  <div class="manager-content">
+                      <h3>References</h3>
+                    <div class="form-group">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="control-label">Name</label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            placeholder="Start date"
+                          />
                         </div>
-                        <div class="form-group">
-                          <div class="row">
-                            <div class="col-md-6">
-                              <label class="control-label">Family Name</label>
-                              <input type="text" class="form-control" placeholder="Enter first name">
-                            </div>
-                            <div class="col-md-6">
-                              <label class="control-label">Birth date</label>
-                              <input type="text" class="form-control" placeholder="Enter last name">
-                            </div>
-                          </div>
+                        <div class="col-md-6">
+                          <label class="control-label">Phone</label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            placeholder="End date"
+                          />
                         </div>
-                        <div class="form-group">
-                          <div class="row">
-                            <div class="col-md-6">
-                              <label class="control-label">Email</label>
-                              <input type="text" class="form-control" placeholder="Enter first name">
-                            </div>
-                            <div class="col-md-6">
-                              <label class="control-label">Birth date</label>
-                              <input type="text" class="form-control" placeholder="Enter last name">
-                            </div>
-                          </div>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="control-label">Job title</label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            placeholder="Job title"
+                          />
                         </div>
-                        <div class="form-group">
-                          <div class="row">
-                            <div class="col-md-6">
-                              <label class="control-label">Gender</label>
-                              <div class="search-category-container">
-                                <label class="styled-select">
-                                  <select class="dropdown-product selectpicker">
-                                    <option>Male</option>
-                                    <option>Female</option>
-                                  </select>
-                                </label>
-                              </div>
-                            </div>
-                            <div class="col-md-6">
-                              <label class="control-label">Country</label>
-                              <div class="search-category-container">
-                                <label class="styled-select">
-                                  <select class="dropdown-product selectpicker">
-                                    <option>All Categories</option>
-                                    <option>Finance</option>
-                                    <option>IT & Engineering</option>
-                                    <option>Education/Training</option>
-                                    <option>Art/Design</option>
-                                    <option>Sale/Markting</option>
-                                    <option>Healthcare</option>
-                                    <option>Science</option>
-                                    <option>Food Services</option>
-                                  </select>
-                                </label>
-                              </div>
-                            </div>
-                          </div>
+                        <div class="col-md-6">
+                          <label class="control-label"
+                            >Email address
+                          </label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            placeholder="Email address"
+                          />
                         </div>
-                        <div class="form-group">
-                          <div class="row">
-                            <div class="col-md-6">
-                              <label class="control-label">How did you hear about us?</label>
-                              <div class="search-category-container">
-                                <label class="styled-select">
-                                  <select class="dropdown-product selectpicker">
-                                    <option>All Categories</option>
-                                    <option>Finance</option>
-                                    <option>IT & Engineering</option>
-                                    <option>Education/Training</option>
-                                    <option>Art/Design</option>
-                                    <option>Sale/Markting</option>
-                                    <option>Healthcare</option>
-                                    <option>Science</option>
-                                    <option>Food Services</option>
-                                  </select>
-                                </label>
-                              </div>
-                            </div>
-                          </div>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="control-label">Company Name</label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            placeholder="Company Industry"
+                          />
                         </div>
-                        <div class="form-group">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <button class="btn btn-common log-btn" type="button">
+                        Add
+                      </button>
+                      &nbsp;
+                      <button
+                        class="btn btn-common  btn-danger"
+                        type="button"
+                      >
+                        Reset
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="manager-resumes-item">
+                    <div class="manager-content">
+                        <h3>Other detail</h3>
+                      <div class="form-group">
+                        <div class="row">
                           <div class="col-md-6">
-                            <input type="checkbox" name="vehicle1" value="Bike"> &nbsp; Are you a AD Ports
-                            employee?
+                            <label class="control-label"
+                              >Passport Number</label
+                            >
+                            <input
+                              type="text"
+                              class="form-control"
+                              placeholder="Passport Number"
+                            />
+                          </div>
+                          <div class="col-md-6">
+                            <label class="control-label"
+                              >Name and Age of Dependent Children</label
+                            >
+                            <input
+                              type="text"
+                              class="form-control"
+                              placeholder="Name and Age of Dependent Children"
+                            />
                           </div>
                         </div>
-                        <div class="form-group">
-                          <button class="btn btn-common log-btn" type="button">Add</button> &nbsp;
-                          <button class="btn btn-common  btn-danger" type="button">Cancel</button>
+                      </div>
+                      <div class="form-group">
+                        <div class="row">
+                          <div class="col-md-6">
+                            <label class="control-label"
+                              >Passport Expiry Date</label
+                            >
+                            <input
+                              type="text"
+                              class="form-control"
+                              placeholder="Passport Expiry Date"
+                            />
+                          </div>
+                          <div class="col-md-6">
+                            <label class="control-label"
+                              >Name of Spouse
+                            </label>
+                            <input
+                              type="text"
+                              class="form-control"
+                              placeholder="Name of Spouse"
+                            />
+                          </div>
                         </div>
                       </div>
-
+                      <div class="form-group">
+                        <div class="row">
+                          <div class="col-md-6">
+                            <label class="control-label"
+                              >Nationality of Spouse</label
+                            >
+                            <input
+                              type="text"
+                              class="form-control"
+                              placeholder="Nationality of Spouse"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <div class="col-md-12">
+                          <input
+                            type="checkbox"
+                            name="vehicle1"
+                            value="Bike"
+                          />
+                          &nbsp; Have you ever plead guilty, no contest or
+                          been convicted of any crime?
+                        </div>
+                      </div>
+                      
                     </div>
                   </div>
-                </div>
-              </div>
-            </div>
-            <div class="panel-group" id="accordion">
-              <div class="panel panel-default">
-                <div class="panel-heading">
-                  <h4 class="panel-title">
-                    <a data-toggle="collapse" class="collapsed" data-parent="#accordion" href="#collapseEduction">
-                      Education
-                    </a>
-                  </h4>
-                </div>
-                <div id="collapseEduction" class="panel-collapse collapse in">
-                  <div class="panel-body">
-                    <div class="manager-resumes-item">
-                      <div class="manager-content">
-                        <div class="form-group">
-                          <div class="row">
-                            <div class="col-md-6">
-                              <label class="control-label">Institution Name</label>
-                              <input type="text" class="form-control" placeholder="Institution Name">
-                            </div>
-                            <div class="col-md-6">
-                              <label class="control-label">Degree</label>
-                              <div class="search-category-container">
-                                <label class="styled-select">
-                                  <select class="dropdown-product selectpicker">
-                                    <option>High school or equivalent</option>
-                                    <option>Master's degree </option>
-                                    <option>Diploma</option>
-                                    <option>Doctorate</option>
-                                    <option>Bachelor's degree</option>
-                                    <option>Higher diploma</option>
-                                  </select>
-                                </label>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="form-group">
-                          <div class="row">
-                            <div class="col-md-6">
-                              <label class="control-label">Grade</label>
-                              <input type="text" class="form-control" placeholder="Grade">
-                            </div>
-                            <div class="col-md-6">
-                              <label class="control-label">Completion date</label>
-                              <input type="text" class="form-control" placeholder="Completion date">
-                            </div>
-                          </div>
-                        </div>
-                        <div class="form-group">
-                          <div class="row">
-                            <div class="col-md-6">
-                              <label class="control-label">Country</label>
-                              <div class="search-category-container">
-                                <label class="styled-select">
-                                  <select class="dropdown-product selectpicker">
-                                    <option value="">Select</option>
-                                    <option>All Categories</option>
-                                    <option>Finance</option>
-                                    <option>IT & Engineering</option>
-                                    <option>Education/Training</option>
-                                    <option>Art/Design</option>
-                                    <option>Sale/Markting</option>
-                                    <option>Healthcare</option>
-                                    <option>Science</option>
-                                    <option>Food Services</option>
-                                  </select>
-                                </label>
-                              </div>
-                            </div>
-                            <div class="col-md-6">
-                              <label class="control-label">City</label>
-                              <div class="search-category-container">
-                                <label class="styled-select">
-                                  <select class="dropdown-product selectpicker">
-                                    <option value="">Select</option>
-                                    <option>All Categories</option>
-                                    <option>Finance</option>
-                                    <option>IT & Engineering</option>
-                                    <option>Education/Training</option>
-                                    <option>Art/Design</option>
-                                    <option>Sale/Markting</option>
-                                    <option>Healthcare</option>
-                                    <option>Science</option>
-                                    <option>Food Services</option>
-                                  </select>
-                                </label>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-
-                        <div class="form-group">
-                          <button class="btn btn-common log-btn" type="button">Add</button> &nbsp;
-                          <button class="btn btn-common btn-danger" type="button">Reset</button>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="manager-resumes-item">
-                      <div class="manager-content">
-
-                        <div class="manager-info">
-                          <div class="manager-name">
-                            <h4><a href="#">Zane Joyner</a></h4>
-                            <h5>Front-end developer</h5>
-                          </div>
-                          <div class="manager-meta">
-                            <span class="location"><i class="lni-map-marker"></i> Cupertino, CA, USA</span>
-                            <span class="rate"><i class="lni-alarm-clock"></i> $55 per hour</span>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="update-date">
-                        <p class="status">
-                          <strong>Updated on:</strong> Fab 22, 2020
-                        </p>
-                        <div class="action-btn">
-                          <a class="btn btn-xs btn-gray" href="#">Edit</a>
-                          <a class="btn btn-xs btn-danger" href="#">Delete</a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="manager-resumes-item">
-                      <div class="manager-content">
-
-                        <div class="manager-info">
-                          <div class="manager-name">
-                            <h4><a href="#">Zane Joyner</a></h4>
-                            <h5>Front-end developer</h5>
-                          </div>
-                          <div class="manager-meta">
-                            <span class="location"><i class="lni-map-marker"></i> Cupertino, CA, USA</span>
-                            <span class="rate"><i class="lni-alarm-clock"></i> $55 per hour</span>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="update-date">
-                        <p class="status">
-                          <strong>Updated on:</strong> Fab 22, 2020
-                        </p>
-                        <div class="action-btn">
-                          <a class="btn btn-xs btn-gray" href="#">Edit</a>
-                          <a class="btn btn-xs btn-danger" href="#">Delete</a>
-                        </div>
-                      </div>
-                    </div>
-
-
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="panel-group" id="accordion">
-              <div class="panel panel-default">
-                <div class="panel-heading">
-                  <h4 class="panel-title">
-                    <a data-toggle="collapse" class="collapsed" data-parent="#accordion" href="#collapseExperience">
-                      Experience
-                    </a>
-                  </h4>
-                </div>
-                <div id="collapseExperience" class="panel-collapse collapse in">
-                  <div class="panel-body">
-                    <div class="manager-resumes-item">
-                      <div class="manager-content">
-                        <div class="form-group">
-                          <div class="col-md-12">
-                            <input type="checkbox" name="vehicle1" value="Bike"> &nbsp; Do you have professional work
-                            experience?
-                          </div>
-                        </div>
-                        <div class="form-group">
-                          <div class="row">
-                            <div class="col-md-6">
-                              <label class="control-label">Start date</label>
-                              <input type="text" class="form-control" placeholder="Start date">
-                            </div>
-                            <div class="col-md-6">
-                              <label class="control-label">End date</label>
-                              <input type="text" class="form-control" placeholder="End date">
-                            </div>
-                          </div>
-                        </div>
-                        <div class="form-group">
-                          <div class="row">
-                            <div class="col-md-6">
-                              <label class="control-label">Location</label>
-                              <input type="text" class="form-control" placeholder="Location">
-                            </div>
-                            <div class="col-md-6">
-                              <label class="control-label">Nationality of Spouse </label>
-                              <input type="text" class="form-control" placeholder="Company Name">
-                            </div>
-                          </div>
-                        </div>
-                        <div class="form-group">
-                          <div class="row">
-                            <div class="col-md-6">
-                              <label class="control-label">Company Industry</label>
-                              <input type="text" class="form-control" placeholder="Company Industry">
-                            </div>
-                            <div class="col-md-6">
-                              <label class="control-label">Job Role </label>
-                              <input type="text" class="form-control" placeholder="Job Role">
-                            </div>
-                          </div>
-                        </div>
-                        <div class="form-group">
-                          <div class="row">
-                            <div class="col-md-6">
-                              <label class="control-label">Position in Company</label>
-                              <input type="text" class="form-control" placeholder="Position in Company">
-                            </div>
-
-                          </div>
-                        </div>
-                        <div class="form-group">
-                          <div class="row">
-                            <div class="col-md-12">
-                              <label class="control-label">Work Description</label>
-                              <textarea class="form-control" placeholder="Work Description" rows="5"></textarea>
-                            </div>
-                          </div>
-                        </div>
-
-                        <div class="form-group">
-                          <button class="btn btn-common log-btn" type="button">Add</button> &nbsp;
-                          <button class="btn btn-common  btn-danger" type="button">Reset</button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="panel-group" id="accordion">
-              <div class="panel panel-default">
-                <div class="panel-heading">
-                  <h4 class="panel-title">
-                    <a data-toggle="collapse" class="collapsed" data-parent="#accordion" href="#collapseLanguage">
-                      Language
-                    </a>
-                  </h4>
-                </div>
-                <div id="collapseLanguage" class="panel-collapse collapse in">
-                  <div class="panel-body">
-                    <div class="manager-resumes-item">
-                      <div class="manager-content">
-                        <div class="form-group">
-                          <div class="row">
-                            <div class="col-md-6">
-                              <label class="control-label">Language</label>
-                              <input type="text" class="form-control" placeholder="Language">
-                            </div>
-                          </div>
-                        </div>
-                        <div class="form-group">
-                          <button class="btn btn-common log-btn" type="button">Add</button> &nbsp;
-                          <button class="btn btn-common  btn-danger" type="button">Reset</button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="panel-group" id="accordion">
-              <div class="panel panel-default">
-                <div class="panel-heading">
-                  <h4 class="panel-title">
-                    <a data-toggle="collapse" class="collapsed" data-parent="#accordion" href="#collapseCVAttachment">
-                      CV Attachement
-                    </a>
-                  </h4>
-                </div>
-                <div id="collapseCVAttachment" class="panel-collapse collapse in">
-                  <div class="panel-body">
-                    <div class="manager-resumes-item">
-                      <div class="manager-content">
-                        <div class="button-group">
-                          <div class="action-buttons">
-                            <div class="upload-button">
-                              <button class="btn btn-common">Upload resume</button>
-                              <input id="cover_img_file_1" type="file">
-                            </div>
-                          </div>
-                        </div>
-                        <div class="form-group">
-                          <button class="btn btn-common log-btn" type="button">Add</button> &nbsp;
-                          <button class="btn btn-common  btn-danger" type="button">Cancel</button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="panel-group" id="accordion">
-              <div class="panel panel-default">
-                <div class="panel-heading">
-                  <h4 class="panel-title">
-                    <a data-toggle="collapse" class="collapsed" data-parent="#accordion" href="#collapseReference">
-                      References
-                    </a>
-                  </h4>
-                </div>
-                <div id="collapseReference" class="panel-collapse collapse in">
-                  <div class="panel-body">
-                    <div class="manager-resumes-item">
-                      <div class="manager-content">
-                        <div class="form-group">
-                          <div class="row">
-                            <div class="col-md-6">
-                              <label class="control-label">Name</label>
-                              <input type="text" class="form-control" placeholder="Start date">
-                            </div>
-                            <div class="col-md-6">
-                              <label class="control-label">Phone</label>
-                              <input type="text" class="form-control" placeholder="End date">
-                            </div>
-                          </div>
-                        </div>
-                        <div class="form-group">
-                          <div class="row">
-                            <div class="col-md-6">
-                              <label class="control-label">Job title</label>
-                              <input type="text" class="form-control" placeholder="Job title">
-                            </div>
-                            <div class="col-md-6">
-                              <label class="control-label">Email address </label>
-                              <input type="text" class="form-control" placeholder="Email address">
-                            </div>
-                          </div>
-                        </div>
-                        <div class="form-group">
-                          <div class="row">
-                            <div class="col-md-6">
-                              <label class="control-label">Company Name</label>
-                              <input type="text" class="form-control" placeholder="Company Industry">
-                            </div>
-
-                          </div>
-                        </div>
-                        <div class="form-group">
-                          <button class="btn btn-common log-btn" type="button">Add</button> &nbsp;
-                          <button class="btn btn-common  btn-danger" type="button">Reset</button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="panel-group" id="accordion">
-              <div class="panel panel-default">
-                <div class="panel-heading">
-                  <h4 class="panel-title">
-                    <a data-toggle="collapse" class="collapsed" data-parent="#accordion" href="#collapseOthers">
-                      Other detail
-                    </a>
-                  </h4>
-                </div>
-                <div id="collapseOthers" class="panel-collapse collapse in">
-                  <div class="panel-body">
-                    <div class="manager-resumes-item">
-                      <div class="manager-content">
-                        <div class="form-group">
-                          <div class="row">
-                            <div class="col-md-6">
-                              <label class="control-label">Passport Number</label>
-                              <input type="text" class="form-control" placeholder="Passport Number">
-                            </div>
-                            <div class="col-md-6">
-                              <label class="control-label">Name and Age of Dependent Children</label>
-                              <input type="text" class="form-control" placeholder="Name and Age of Dependent Children">
-                            </div>
-                          </div>
-                        </div>
-                        <div class="form-group">
-                          <div class="row">
-                            <div class="col-md-6">
-                              <label class="control-label">Passport Expiry Date</label>
-                              <input type="text" class="form-control" placeholder="Passport Expiry Date">
-                            </div>
-                            <div class="col-md-6">
-                              <label class="control-label">Name of Spouse </label>
-                              <input type="text" class="form-control" placeholder="Name of Spouse">
-                            </div>
-                          </div>
-                        </div>
-                        <div class="form-group">
-                          <div class="row">
-                            <div class="col-md-6">
-                              <label class="control-label">Nationality of Spouse</label>
-                              <input type="text" class="form-control" placeholder="Nationality of Spouse">
-                            </div>
-
-                          </div>
-                        </div>
-                        <div class="form-group">
-                          <div class="col-md-12">
-                            <input type="checkbox" name="vehicle1" value="Bike"> &nbsp; Have you ever plead guilty, no
-                            contest or been convicted of any crime?
-                          </div>
-                        </div>
-                        <div class="form-group">
-                          <button class="btn btn-common log-btn" type="button">Add</button> &nbsp;
-                          <button class="btn btn-common  btn-danger" type="button">Reset</button>
-                        </div>
-                      </div>
-                    </div>
-
-                  </div>
-                </div>
-              </div>
-            </div>
           </form>
           <a href="resume.html" class="btn btn-common">Save</a>
         </div>
@@ -551,4 +600,4 @@
     </div>
   </div>
 </section>
-<app-footer></app-footer>
+<!-- <app-footer></app-footer> -->
